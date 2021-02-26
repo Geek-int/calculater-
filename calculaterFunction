@@ -1,0 +1,134 @@
+#include<iostream>
+int addition(int);
+int subtraction(int);
+int division(int);
+int product(int);
+  float sum = 0.0;
+  float sub = 0.0;
+  float multi = 0.0;
+  float div = 0.0;
+ using namespace std;
+ int main(){
+	  int itmes ;
+	  char oper;
+	  cout<<"What is the oparetion you want to use? \n    (/) for division, (*) for multiplication, (-) for subtraction, (+) for addition ";
+	  cin>>oper;
+	  switch (oper){
+	 
+	  case '+':{
+	cout<<"How many operends you want to claculate? ";
+	cin>>itmes;
+	addition(itmes);
+	/*for(int t=1; t <= itmes ; t++){
+	cout<<"enter the operand:  ( "<<t<<" )";
+	float number;
+	cin>>number;
+	sum += number;
+	}
+	cout<<"the resutl: "<<sum;*/
+	break;
+	}
+	
+	case '-' :{
+	cout<<"How many operends you want to claculate? ";
+	cin>>itmes;
+	subtraction(itmes);
+	/*for(int t=1; t <= itmes ; t++){
+	cout<<"enter the operand:  ( "<<t<<" )";
+	float number;
+	cin>>number;
+	if( sub == 0.0){
+	sub = number;
+	}
+	else{
+	sub -= number;
+		}
+	}
+	cout<<"the resutl: "<<sub;*/
+	break;
+	}
+	case '*' :{
+	cout<<"How many operends you want to claculate? ";
+	cin>>itmes;
+	product(itmes);
+	/*for(int t=1; t <= itmes ; t++){
+	cout<<"enter the operand:  ( "<<t<<" )";
+	float number;
+	cin>>number;
+	multi *= number;
+	}
+	cout<<"the resutl: "<<multi;*/
+	break;
+	}
+	case '/' :{
+	cout<<"How many operends you want to claculate? ";
+	cin>>itmes;
+	division(itmes);
+	/*for(int t=1; t <= itmes ; t++){
+	cout<<"enter the operand:  ( "<<t<<" )";
+	float number;
+	cin>>number;
+	if( div == 0.0){
+	div = number;
+	}
+	else{
+	div /= number;
+	}
+	}
+	cout<<"the resutl: "<<div;*/
+	break;
+	}
+	}
+	  return 0;
+  } 
+  
+addition(int i){
+	for(int t=1; t <= i ; t++){
+	cout<<"Enter the operand:  ( "<<t<<" )";
+	float number;
+	cin>>number;
+	sum += number;
+	}
+	cout<<"the resutl: "<<sum;
+
+  }
+
+subtraction(int i){
+	for(int t=1; t <= i ; t++){
+	cout<<"enter the operand:  ( "<<t<<" )";
+	float number;
+	cin>>number;
+	if( sub == 0.0){
+	sub = number;
+	}
+	else{
+	sub -= number;
+		}
+	}
+	cout<<"the resutl: "<<sub;
+}
+
+division(int i){
+	for(int t=1; t <= i ; t++){
+	cout<<"enter the operand:  ( "<<t<<" )";
+	float number;
+	cin>>number;
+	if( div == 0.0){
+	div = number;
+	}
+	else{
+	div /= number;
+	}
+	}
+	cout<<"the resutl: "<<div;
+}
+
+product(int i){
+	for(int t=1; t <= i ; t++){
+	cout<<"enter the operand:  ( "<<t<<" )";
+	float number;
+	cin>>number;
+	multi *= number;
+	}
+	cout<<"the resutl: "<<multi;
+}
